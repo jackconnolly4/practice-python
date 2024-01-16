@@ -28,6 +28,18 @@
 
 # Write a program that uses variables to store two words, then prints both words on the same line in all capital letters.
 
-word1 = "WEEN"
-word2 = "CITY"
-print(word1.upper() + word2.upper())
+# word1 = "WEEN"
+# word2 = "CITY"
+# print(word1.upper() + word2.upper())
+
+# Write a program that uses a variable to store a word, then prints the number of letters in the word.
+
+# word = "Ween"
+
+# print(len(word))
+
+# Write a program that uses a variable to store a number with decimals, then prints the number as an integer.
+
+number = 3.55
+
+print(int(number))
