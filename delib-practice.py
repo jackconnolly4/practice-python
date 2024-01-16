@@ -40,6 +40,19 @@
 
 # Write a program that uses a variable to store a number with decimals, then prints the number as an integer.
 
-number = 3.55
+# number = 3.55
 
-print(int(number))
+# print(int(number))
+
+# Write a program that uses a variable to store two numbers, then prints the two numbers multiplied together.
+
+# number1 = 4
+# number2 = 6
+
+# print(number1 * number2)
+
+# Write a program that uses a variable to store a word, then prints the word with all lowercase letters.
+
+# word = "WEEN"
+
+# print(word.lower())
