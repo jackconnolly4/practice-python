@@ -10,7 +10,7 @@
 # first_name = "Jack"
 # last_name = "Connolly"
 
-# print(f"{first_name} #{last_name}")
+# print(f"{first_name} {last_name}")
 
 # Write a program that asks the user to input a word. If the word is "marco", print "polo".
 
@@ -20,8 +20,16 @@
     
 # Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string concatenation (the + operator).
 
+# color1 = "green"
+# color2 = "orange"
+# color3 = "blue"
+
+# print("My favorite colors are " + color1 + ", " + color2 + ", and " + color3)
+
+# Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
+                                                                                                                                            
 color1 = "green"
-color2 = "red"
+color2 = "orange"
 color3 = "blue"
 
-print("My favorite colors are " + color1 + ", " + color2 + ", and " + color3)
+print(f"My favorite colors are {color1}, {color2}, and {color3}")
