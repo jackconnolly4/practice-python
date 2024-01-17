@@ -53,3 +53,19 @@
 # title = "On The Road"
 
 # print(f"I like the book {title} by {author}.")
+
+# Write a program that asks the user to enter a password. If the password is "Joshua", the program responds "Shall we play a game?". For any other password, the program responds "Access denied"
+
+# password = input("Enter a password: ")
+# if password == "Joshua":
+#   print("Would you like to play a game?")
+# else:
+#   print("Access Denied")
+
+# Write a program that uses variables to store the names of three cities, then prints out a sentence using that information with string concatenation (the + operator).
+
+# city1 = "Boston"
+# city2 = "New York City"
+# city3 = "Chicago"
+
+# print("Some of the biggest U.S. cities are " + city1 + ", " + city2 + ", and" + city3 + "." )
