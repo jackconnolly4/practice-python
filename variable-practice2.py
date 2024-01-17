@@ -28,8 +28,14 @@
 
 # Write a program that uses variables to store three different colors, then prints out a sentence using the colors with string interpolation (the #{} operator).
                                                                                                                                             
-color1 = "green"
-color2 = "orange"
-color3 = "blue"
+# color1 = "green"
+# color2 = "orange"
+# color3 = "blue"
 
-print(f"My favorite colors are {color1}, {color2}, and {color3}")
+# print(f"My favorite colors are {color1}, {color2}, and {color3}")
+
+# Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+
+# name = input("Enter your name: ")
+# if name != "Santa":
+#   print("You're not Santa!")
