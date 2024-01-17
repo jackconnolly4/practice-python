@@ -47,14 +47,32 @@
 
 # Use a variable to store a number, then write a condition that prints 9 if the number is less than 10, prints 19 if the number is less than 20, prints 29 if the number is less than 30, and prints -1 otherwise (only one print statement should occur).
   
-number = 15
+# number = 15
 
-if number < 10:
-  print(9)
-elif number < 20:
-  print(19)
-elif number < 30:
-  print(29)
+# if number < 10:
+#   print(9)
+# elif number < 20:
+#   print(19)
+# elif number < 30:
+#   print(29)
+# else:
+#   print(1)
+
+# Use variables to store two numbers, then write a condition that prints 100 if either number is greater than 10, and prints -100 otherwise.
+
+# number1 = 4 
+# number2 = 44
+
+# if number1 > 10 or number2 > 10:
+#   print(100)
+# else:
+#   print(-100)
+
+# Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise.
+
+number = 44
+
+if number < 0:
+  print(1776)
 else:
-  print(1)
-
+  print(1979)
