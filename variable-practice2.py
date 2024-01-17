@@ -39,3 +39,17 @@
 # name = input("Enter your name: ")
 # if name != "Santa":
 #   print("You're not Santa!")
+
+# Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string concatenation (the + operator).
+
+# author = "Jack Kerouac"
+# title = "On The Road"
+
+# print("I like the book " + title + " by " + author + ".")
+
+# Write a program that uses variables to store a book's title and author, then prints out a sentence using that information with string interpolation (the #{} operator).
+
+# author = "Jack Kerouac"
+# title = "On The Road"
+
+# print(f"I like the book {title} by {author}.")
