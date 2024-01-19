@@ -41,17 +41,42 @@
 # If the book is a reference book, there is no fine, regardless of the number of days overdue.
 # If the book is a special collection book, the fine is $5 per day, regardless of the number of days overdue.
 
-type = "regular"
-days = 5
-fine = 0
+# type = "regular"
+# days = 5
+# fine = 0
 
-if type == "regular" and days <= 7:
-  fine = days * 1
-elif type == "regular" and days > 7:
-  fine = days * 2
-elif type == "reference":
-  fine = 0
-else: 
-  fine = days * 5
+# if type == "regular" and days <= 7:
+#   fine = days * 1
+# elif type == "regular" and days > 7:
+#   fine = days * 2
+# elif type == "reference":
+#   fine = 0
+# else: 
+#   fine = days * 5
 
-print(fine)
+# print(fine)
+
+# Write a program that stores a person's order value and membership level (regular or premium). Then calculate a discount amount based on the following conditions:
+
+# If the total order value is less than $50, there is no discount.
+# If the total order value is between $50 and $100, the discount is 5% for regular customers and 10% for premium customers.
+# If the total order value is greater than $100, the discount is 10% for regular customers and 15% for premium customers.
+
+value = 105
+membership = "premium"
+
+
+if value < 50:
+  discount = 0
+elif value <= 100 and value >= 50:
+  if membership == "regular":
+    discount = value * 0.05
+  else: 
+    discount = value * 0.10
+elif value > 100:
+  if membership == "regular":
+    discount =  value * 0.10
+  else: 
+    discount = value * 0.15
+
+print(discount)
