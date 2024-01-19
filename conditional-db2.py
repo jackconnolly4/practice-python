@@ -40,3 +40,18 @@
 # If the book is a regular book and overdue by more than 7 days, the fine is $2 per day.
 # If the book is a reference book, there is no fine, regardless of the number of days overdue.
 # If the book is a special collection book, the fine is $5 per day, regardless of the number of days overdue.
+
+type = "regular"
+days = 5
+fine = 0
+
+if type == "regular" and days <= 7:
+  fine = days * 1
+elif type == "regular" and days > 7:
+  fine = days * 2
+elif type == "reference":
+  fine = 0
+else: 
+  fine = days * 5
+
+print(fine)
