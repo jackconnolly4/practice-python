@@ -62,21 +62,46 @@
 # If the total order value is between $50 and $100, the discount is 5% for regular customers and 10% for premium customers.
 # If the total order value is greater than $100, the discount is 10% for regular customers and 15% for premium customers.
 
-value = 105
-membership = "premium"
+# value = 105
+# membership = "premium"
 
 
-if value < 50:
-  discount = 0
-elif value <= 100 and value >= 50:
-  if membership == "regular":
-    discount = value * 0.05
-  else: 
-    discount = value * 0.10
-elif value > 100:
-  if membership == "regular":
-    discount =  value * 0.10
-  else: 
-    discount = value * 0.15
+# if value < 50:
+#   discount = 0
+# elif value <= 100 and value >= 50:
+#   if membership == "regular":
+#     discount = value * 0.05
+#   else: 
+#     discount = value * 0.10
+# elif value > 100:
+#   if membership == "regular":
+#     discount =  value * 0.10
+#   else: 
+#     discount = value * 0.15
 
-print(discount)
+# print(discount)
+
+# Write a program that stores the weight of a package and the destination (domestic or international). Then calculate the shipping fee based on the following conditions:
+
+# If the destination is domestic:
+# If the weight is less than or equal to 1 kg, the shipping fee is $5.
+# If the weight is greater than 1 kg, the shipping fee is $10.
+# If the destination is an international shipment:
+# If the weight is less than or equal to 1 kg, the shipping fee is $15.
+# If the weight is greater than 1 kg, the shipping fee is $25.
+
+destination = "international"
+weight = 0/5
+
+if destination == "domestic":
+  if weight <= 1:
+    shipping = 5
+  else:
+    shipping = 10
+elif destination == "international":
+  if weight <= 1:
+    shipping = 15
+  else:
+    shipping = 25
+
+print(shipping)
