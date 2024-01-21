@@ -22,8 +22,23 @@
     
 # Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
 
-number = 0
+# number = 0
 
-while number <= 100:
-  print(number)
-  number += 5
+# while number <= 100:
+#   print(number)
+#   number += 5
+
+#   Write a while loop that prints the number 9000 ten times.
+
+# number = 1
+
+# while number <= 10:
+#   print(9000)
+#   number += 1
+
+# Write a while loop that asks the user to enter a number and will run forever until the user enters a number greater than 10.
+
+while True:
+  number = input("Enter a number: ")
+  if int(number) > 10:
+    break
