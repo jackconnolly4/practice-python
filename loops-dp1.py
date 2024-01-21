@@ -53,8 +53,23 @@
 
 # Write a while loop that prints the phrase "Around the world" 144 times.
 
-count = 1
+# count = 1
 
-while count <= 144:
-  print("Around the world")
-  count += 1
+# while count <= 144:
+#   print("Around the world")
+#   count += 1
+
+# Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letter
+
+# while True:
+#   word = input("Enter a word: ")
+#   if len(word) > 5:
+#     break
+
+# Write a while loop that prints the even numbers from 2 to 40.
+
+number = 2
+
+while number <= 40:
+  print(number)
+  number += 2
