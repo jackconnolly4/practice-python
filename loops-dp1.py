@@ -12,3 +12,18 @@
 # while number <= 5:
 #   print("hello")
 #   number += 1
+
+# Write a while loop that asks the user to enter a word and will run forever until the user enters the word "stop".
+
+# while True:
+#     word = input("Enter a word: ")
+#     if word == "stop":
+#         break
+    
+# Write a while loop that prints the numbers 0 through 100, increasing by 5 each time.
+
+number = 0
+
+while number <= 100:
+  print(number)
+  number += 5
