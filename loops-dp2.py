@@ -64,12 +64,26 @@
 # Start with an array of strings and create a new array with each string's length.
 # For example, ["hello", "goodbye"] becomes [5, 7].
 
-strings = ["hello", "goodbye", "ween"]
-lengths = []
+# strings = ["hello", "goodbye", "ween"]
+# lengths = []
+# index = 0
+
+# while index < len(strings):
+#   lengths.append(len(strings[index]))
+#   index += 1
+
+# print(lengths)
+
+# Start with an array of hashes and create a new array of number values from each hash's :age key.
+# For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+
+
+hashes = [{"name": "Jack", "age": 27}, {"name": "Harold", "age": 42}, {"name": "Flutie", "age": 75}]
+ages = []
 index = 0
 
-while index < len(strings):
-  lengths.append(len(strings[index]))
+while index < len(hashes):
+  ages.append(hashes[index]["age"])
   index += 1
 
-print(lengths)
+print(ages)
