@@ -38,12 +38,25 @@
 # Start with an array of hashes and create a new array of string values from each hash's :name key.
 # For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
-hashes = [{"name": "Jack", "age": 27}, {"name": "Harold", "age": 42}]
-strings = []
+# hashes = [{"name": "Jack", "age": 27}, {"name": "Harold", "age": 42}]
+# strings = []
+# index = 0
+
+# while index < 2:
+#   strings.append(hashes[index]["name"])
+#   index += 1
+
+# print(strings)
+
+# Start with an array of numbers and create a new array with each number plus 7.
+# For example, [1, 2, 3] becomes [8, 9, 10].
+
+numbers = [1, 2, 3]
+new_numbers = []
 index = 0
 
-while index < 2:
-  strings.append(hashes[index]["name"])
+while index < len(numbers):
+  new_numbers += [numbers[index] + 7]
   index += 1
 
-print(strings)
+print(new_numbers)
