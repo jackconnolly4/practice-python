@@ -51,12 +51,25 @@
 # Start with an array of numbers and create a new array with each number plus 7.
 # For example, [1, 2, 3] becomes [8, 9, 10].
 
-numbers = [1, 2, 3]
-new_numbers = []
+# numbers = [1, 2, 3]
+# new_numbers = []
+# index = 0
+
+# while index < len(numbers):
+#   new_numbers += [numbers[index] + 7]
+#   index += 1
+
+# print(new_numbers)
+
+# Start with an array of strings and create a new array with each string's length.
+# For example, ["hello", "goodbye"] becomes [5, 7].
+
+strings = ["hello", "goodbye", "ween"]
+lengths = []
 index = 0
 
-while index < len(numbers):
-  new_numbers += [numbers[index] + 7]
+while index < len(strings):
+  lengths.append(len(strings[index]))
   index += 1
 
-print(new_numbers)
+print(lengths)
