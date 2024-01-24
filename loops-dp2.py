@@ -119,12 +119,27 @@
 # For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
 
-hashes = [{"name": "Jack", "age": 27}, {"name": "Harold", "age": 42}, {"name": "Flutie", "age": 75}]
-ages = []
+# hashes = [{"name": "Jack", "age": 27}, {"name": "Harold", "age": 42}, {"name": "Flutie", "age": 75}]
+# ages = []
+# index = 0
+
+# while index < len(hashes):
+#   ages.append(hashes[index]["age"] * 2)
+#   index += 1
+
+# print(ages)
+
+# Start with an array of numbers and create a new array with each number converted into a string.
+# For example, [1, 2, 3] becomes ["1", "2", "3"].
+
+numbers = [1, 2, 3]
+strings = []
 index = 0
 
-while index < len(hashes):
-  ages.append(hashes[index]["age"] * 2)
+while index < len(numbers):
+  number = numbers[index]
+  strings.append(str(number))
   index += 1
 
-print(ages)
+
+print(strings)
