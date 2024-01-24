@@ -78,12 +78,25 @@
 # For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 
 
-hashes = [{"name": "Jack", "age": 27}, {"name": "Harold", "age": 42}, {"name": "Flutie", "age": 75}]
-ages = []
+# hashes = [{"name": "Jack", "age": 27}, {"name": "Harold", "age": 42}, {"name": "Flutie", "age": 75}]
+# ages = []
+# index = 0
+
+# while index < len(hashes):
+#   ages.append(hashes[index]["age"])
+#   index += 1
+
+# print(ages)
+
+# Start with an array of numbers and create a new array with each number divided by 2.
+# For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+
+numbers = [1, 2, 3]
+new_numbers = []
 index = 0
 
-while index < len(hashes):
-  ages.append(hashes[index]["age"])
+while index < len(numbers):
+  new_numbers.append(numbers[index] / 2.0)
   index += 1
 
-print(ages)
+print(new_numbers)
