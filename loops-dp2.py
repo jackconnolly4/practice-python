@@ -91,12 +91,26 @@
 # Start with an array of numbers and create a new array with each number divided by 2.
 # For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
-numbers = [1, 2, 3]
-new_numbers = []
+# numbers = [1, 2, 3]
+# new_numbers = []
+# index = 0
+
+# while index < len(numbers):
+#   new_numbers.append(numbers[index] / 2.0)
+#   index += 1
+
+# print(new_numbers)
+
+# Start with an array of strings and create a new array with each string's first letter only.
+# For example, ["hello", "goodbye"] becomes ["h", "g"].
+
+words = ["ween", "primus"]
+letters = []
 index = 0
 
-while index < len(numbers):
-  new_numbers.append(numbers[index] / 2.0)
+while index < len(words):
+  letter = words[index]
+  letters.append(letter[0])
   index += 1
 
-print(new_numbers)
+print(letters)
