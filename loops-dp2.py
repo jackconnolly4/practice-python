@@ -104,13 +104,27 @@
 # Start with an array of strings and create a new array with each string's first letter only.
 # For example, ["hello", "goodbye"] becomes ["h", "g"].
 
-words = ["ween", "primus"]
-letters = []
+# words = ["ween", "primus"]
+# letters = []
+# index = 0
+
+# while index < len(words):
+#   letter = words[index]
+#   letters.append(letter[0])
+#   index += 1
+
+# print(letters)
+
+# Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
+# For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
+
+
+hashes = [{"name": "Jack", "age": 27}, {"name": "Harold", "age": 42}, {"name": "Flutie", "age": 75}]
+ages = []
 index = 0
 
-while index < len(words):
-  letter = words[index]
-  letters.append(letter[0])
+while index < len(hashes):
+  ages.append(hashes[index]["age"] * 2)
   index += 1
 
-print(letters)
+print(ages)
