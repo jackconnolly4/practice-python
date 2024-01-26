@@ -16,14 +16,19 @@
 # Start with an array of strings and create a new array with only the strings that start with the letter "w".
 # For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
 
-words = ["ween", "ween", "primus", "weezer"]
-w_words = []
-index = 0
+# words = ["ween", "ween", "primus", "weezer"]
+# w_words = []
+# index = 0
 
-while index < len(words):
-  letter = words[index][0]
-  if letter == "w":
-    w_words.append(words[index])
-  index += 1
+# while index < len(words):
+#   letter = words[index][0]
+#   if letter == "w":
+#     w_words.append(words[index])
+#   index += 1
 
-print(w_words)
+# print(w_words)
+
+# Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+
+
