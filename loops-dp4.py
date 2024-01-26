@@ -27,12 +27,26 @@
 # Start with an array of hashes and compute the sum of the prices (from the :price key).
 # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
 
-items = [{ "name": "chair", "price": 100 }, { "name": "pencil", "price": 1 }, { "name": "book", "price": 4 }]
-total_price = 0
+# items = [{ "name": "chair", "price": 100 }, { "name": "pencil", "price": 1 }, { "name": "book", "price": 4 }]
+# total_price = 0
+# index = 0
+
+# while index < len(items):
+#   total_price = total_price + items[index]["price"]
+#   index += 1
+
+# print(total_price)
+
+# Start with an array of numbers and compute the the minumum number.
+# For example, [5, 10, 8, 3, 9] becomes 3.
+
+numbers = [10, 4, 5, 6, 3, 8, 1]
+minimum = numbers[0]
 index = 0
 
-while index < len(items):
-  total_price = total_price + items[index]["price"]
-  index += 1
+while index < len(numbers):
+  if numbers[index] < minimum:
+    minimum = numbers[index]
+  index += 1 
 
-print(total_price)
+print(minimum)
