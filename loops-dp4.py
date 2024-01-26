@@ -40,13 +40,26 @@
 # Start with an array of numbers and compute the the minumum number.
 # For example, [5, 10, 8, 3, 9] becomes 3.
 
-numbers = [10, 4, 5, 6, 3, 8, 1]
-minimum = numbers[0]
+# numbers = [10, 4, 5, 6, 3, 8, 1]
+# minimum = numbers[0]
+# index = 0
+
+# while index < len(numbers):
+#   if numbers[index] < minimum:
+#     minimum = numbers[index]
+#   index += 1 
+
+# print(minimum)
+
+# Start with an array of strings and compute the total length of all the strings.
+# For example, ["volleyball", "basketball", "badminton"] becomes 29.
+
+words = ["ween", "boognish","brown", "stallion"]
+string = ""
 index = 0
 
-while index < len(numbers):
-  if numbers[index] < minimum:
-    minimum = numbers[index]
-  index += 1 
+while index < len(words):
+  string = string + words[index]
+  index += 1
 
-print(minimum)
+print(len(string))
