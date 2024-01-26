@@ -62,14 +62,17 @@
 # Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 # For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
 
-words = ["a", "man", "a", "plan", "a", "canal", "panama", "hi", "ok"]
-short_words = []
-index = 0
+# words = ["a", "man", "a", "plan", "a", "canal", "panama", "hi", "ok"]
+# short_words = []
+# index = 0
 
-while index < len(words):
-  word = words[index]
-  if len(word) < 4:
-    short_words.append(word)
-  index += 1
+# while index < len(words):
+#   word = words[index]
+#   if len(word) < 4:
+#     short_words.append(word)
+#   index += 1
 
-print(short_words)
+# print(short_words)
+
+# Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
