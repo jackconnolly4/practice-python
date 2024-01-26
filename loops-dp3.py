@@ -47,13 +47,29 @@
 # Start with an array of numbers and create a new array with only the even numbers.
 # For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
 
-numbers = [2, 4, 5, 1, 8, 9, 7, 6]
-even_numbers = []
+# numbers = [2, 4, 5, 1, 8, 9, 7, 6]
+# even_numbers = []
+# index = 0
+
+# while index < len(numbers):
+#   if numbers[index] % 2 == 0:
+#     even_numbers.append(numbers[index])
+#   index += 1
+
+# print(even_numbers)
+
+
+# Start with an array of strings and create a new array with only the strings shorter than 4 letters.
+# For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
+
+words = ["a", "man", "a", "plan", "a", "canal", "panama", "hi", "ok"]
+short_words = []
 index = 0
 
-while index < len(numbers):
-  if numbers[index] % 2 == 0:
-    even_numbers.append(numbers[index])
+while index < len(words):
+  word = words[index]
+  if len(word) < 4:
+    short_words.append(word)
   index += 1
 
-print(even_numbers)
+print(short_words)
