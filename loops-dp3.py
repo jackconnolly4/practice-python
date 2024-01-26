@@ -47,4 +47,13 @@
 # Start with an array of numbers and create a new array with only the even numbers.
 # For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
 
+numbers = [2, 4, 5, 1, 8, 9, 7, 6]
+even_numbers = []
+index = 0
 
+while index < len(numbers):
+  if numbers[index] % 2 == 0:
+    even_numbers.append(numbers[index])
+  index += 1
+
+print(even_numbers)
