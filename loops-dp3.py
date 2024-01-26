@@ -122,13 +122,27 @@
 # Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 
-items = [{ "name": "chair", "price": 100 }, { "name": "pencil", "price": 1 }, { "name": "book", "price": 4 }, {"name": "ween", "price": 6}, {"name": "primus", "price": 12}]
-cheap_items = []
+# items = [{ "name": "chair", "price": 100 }, { "name": "pencil", "price": 1 }, { "name": "book", "price": 4 }, {"name": "ween", "price": 6}, {"name": "primus", "price": 12}]
+# cheap_items = []
+# index = 0
+
+# while index < len(items):
+#   if items[index]["price"] < 10:
+#     cheap_items.append(items[index])
+#   index += 1
+
+# print(cheap_items)
+
+# Start with an array of numbers and create a new array with only the odd numbers.
+# For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+odd_numbers = []
 index = 0
 
-while index < len(items):
-  if items[index]["price"] < 10:
-    cheap_items.append(items[index])
+while index < len(numbers):
+  if numbers[index] % 2 != 0:
+    odd_numbers.append(numbers[index])
   index += 1
 
-print(cheap_items)
+print(odd_numbers)
