@@ -31,4 +31,15 @@
 # Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
 
+products = [{"name": "The Pod", "price": 10}, {"name": "GWS", "price": 12}, {"name": "White Pepper", "price": 4} ]
+high_prices = []
+index = 0
 
+while index < len(products):
+  product = products[index]
+  if product["price"] > 5:
+    high_prices.append(product)
+  index += 1
+
+
+print(high_prices)
