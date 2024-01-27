@@ -54,12 +54,39 @@
 # Start with an array of strings and compute the total length of all the strings.
 # For example, ["volleyball", "basketball", "badminton"] becomes 29.
 
-words = ["ween", "boognish","brown", "stallion"]
-string = ""
+# words = ["ween", "boognish","brown", "stallion"]
+# string = ""
+# index = 0
+
+# while index < len(words):
+#   string = string + words[index]
+#   index += 1
+
+# print(len(string))
+
+# Start with an array of hashes and find the hash with the lowest price (from the :price key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
+
+# items = [{ "name": "chair", "price": 100 }, { "name": "pencil", "price": 1 }, { "name": "book", "price": 4 }]
+# cheapest_item = items[0]
+# index = 0
+
+# while index < len(items):
+#   if items[index]["price"] < cheapest_item["price"]:
+#     cheapest_item = items[index]
+#   index += 1
+
+# print(cheapest_item)
+
+# Start with an array of numbers and compute product of all the numbers.
+# For example, [5, 10, 8, 3] becomes 1200.
+
+numbers = [5, 10, 8, 23]
+product = 1
 index = 0
 
-while index < len(words):
-  string = string + words[index]
+while index < len(numbers):
+  product = product * numbers[index]
   index += 1
 
-print(len(string))
+print(product)
