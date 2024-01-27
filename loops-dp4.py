@@ -106,13 +106,28 @@
 
 #  or: 
 
-strings = ["volleyball", "basketball", "badminton"]
-single_string = "-"
+# strings = ["volleyball", "basketball", "badminton"]
+# single_string = "-"
+# index = 0
+
+# while index < len(strings):
+#   string = strings[index]
+#   single_string += f"{string}-"
+#   index += 1
+
+# print(single_string)
+
+# Start with an array of hashes and find the hash with the shortest name (from the :name key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
+
+items = [{ "name": "chair", "price": 100 }, { "name": "pencil", "price": 1 }, { "name": "book", "price": 4 }, {"name": "ween", "price": 6}, {"name": "primus", "price": 12}]
+shortest_name = items[0]
 index = 0
 
-while index < len(strings):
-  string = strings[index]
-  single_string += f"{string}-"
+while index < len(items):
+  name = items[index]["name"]
+  if len(name) < len(shortest_name["name"]):
+    shortest_name = items[index]
   index += 1
 
-print(single_string)
+print(shortest_name)
