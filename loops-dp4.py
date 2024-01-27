@@ -120,14 +120,28 @@
 # Start with an array of hashes and find the hash with the shortest name (from the :name key).
 # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
-items = [{ "name": "chair", "price": 100 }, { "name": "pencil", "price": 1 }, { "name": "book", "price": 4 }, {"name": "ween", "price": 6}, {"name": "primus", "price": 12}]
-shortest_name = items[0]
+# items = [{ "name": "chair", "price": 100 }, { "name": "pencil", "price": 1 }, { "name": "book", "price": 4 }, {"name": "ween", "price": 6}, {"name": "primus", "price": 12}]
+# shortest_name = items[0]
+# index = 0
+
+# while index < len(items):
+#   name = items[index]["name"]
+#   if len(name) < len(shortest_name["name"]):
+#     shortest_name = items[index]
+#   index += 1
+
+# print(shortest_name)
+
+# Start with an array of numbers and compute the maximum number.
+# For example, [5, 10, 8, 3] becomes 10.
+
+numbers = [-1, 0, 1, 4, 2, 3]
+maximum = numbers[0]
 index = 0
 
-while index < len(items):
-  name = items[index]["name"]
-  if len(name) < len(shortest_name["name"]):
-    shortest_name = items[index]
+while index < len(numbers):
+  if numbers[index] > maximum:
+    maximum = numbers[index]
   index += 1
 
-print(shortest_name)
+print(maximum)
