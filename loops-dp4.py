@@ -81,12 +81,38 @@
 # Start with an array of numbers and compute product of all the numbers.
 # For example, [5, 10, 8, 3] becomes 1200.
 
-numbers = [5, 10, 8, 23]
-product = 1
+# numbers = [5, 10, 8, 23]
+# product = 1
+# index = 0
+
+# while index < len(numbers):
+#   product = product * numbers[index]
+#   index += 1
+
+# print(product)
+
+# Start with an array of strings and combine them all into a single string, separated by dashes.
+# For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
+
+# strings = ["volleyball", "basketball", "badminton"]
+# single_string = "-"
+# index = 0
+
+# while index < len(strings):
+#   single_string = single_string + strings[index] + "-"
+#   index += 1
+
+# print(single_string)
+
+#  or: 
+
+strings = ["volleyball", "basketball", "badminton"]
+single_string = "-"
 index = 0
 
-while index < len(numbers):
-  product = product * numbers[index]
+while index < len(strings):
+  string = strings[index]
+  single_string += f"{string}-"
   index += 1
 
-print(product)
+print(single_string)
