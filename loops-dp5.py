@@ -55,19 +55,36 @@
 # Use a nested loop to find the largest product of any two different numbers within a given array.
 # For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
 
-numbers = [5, -2, 1, -9, -7, 2, 6]
-max_product = numbers[0] * numbers[1]
-index1 = 0
-while index1 < len(numbers):
-  current_number = numbers[index1]
+# numbers = [5, -2, 1, -9, -7, 2, 6]
+# max_product = numbers[0] * numbers[1]
+# index1 = 0
+# while index1 < len(numbers):
+#   current_number = numbers[index1]
+#   index2 = 0
+#   while index2 < len(numbers):
+#     if index1 != index2:
+#       other_number = numbers[index2]
+#       product = current_number * other_number
+#       if product > max_product:
+#         max_product = product
+#     index2 += 1
+#   index1 += 1
+
+# print(max_product)
+
+# Use a nested loop to compute the sum of all the numbers in an array of number pairs.
+# For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
+
+number_pairs = [[1, 3], [8, 9], [2, 16]]
+sum = 0
+index = 0
+
+while index < len(number_pairs):
+  numbers = number_pairs[index]
   index2 = 0
   while index2 < len(numbers):
-    if index1 != index2:
-      other_number = numbers[index2]
-      product = current_number * other_number
-      if product > max_product:
-        max_product = product
+    sum += numbers[index2]
     index2 += 1
-  index1 += 1
+  index += 1
 
-print(max_product)
+print(sum)
