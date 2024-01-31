@@ -36,17 +36,38 @@
 # Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 # For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
-letters = ["a", "b", "c", "d"]
-combined_letters = []
-index = 0
+# letters = ["a", "b", "c", "d"]
+# combined_letters = []
+# index = 0
 
-while index < len(letters):
-  letter = letters[index]
+# while index < len(letters):
+#   letter = letters[index]
+#   index2 = 0
+#   while index2 < len(letters):
+#     if index2 != index:
+#       combined_letters.append(letter + letters[index2])
+#     index2 += 1
+#   index += 1
+
+# print(combined_letters)
+
+
+# Use a nested loop to find the largest product of any two different numbers within a given array.
+# For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+
+numbers = [5, -2, 1, -9, -7, 2, 6]
+max_product = numbers[0] * numbers[1]
+index1 = 0
+while index1 < len(numbers):
+  current_number = numbers[index1]
   index2 = 0
-  while index2 < len(letters):
-    if index2 != index:
-      combined_letters.append(letter + letters[index2])
+  while index2 < len(numbers):
+    if index1 != index2:
+      other_number = numbers[index2]
+      product = current_number * other_number
+      if product > max_product:
+        max_product = product
     index2 += 1
-  index += 1
+  index1 += 1
 
-print(combined_letters)
+print(max_product)
