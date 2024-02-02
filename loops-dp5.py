@@ -75,16 +75,19 @@
 # Use a nested loop to compute the sum of all the numbers in an array of number pairs.
 # For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
 
-number_pairs = [[1, 3], [8, 9], [2, 16]]
-sum = 0
-index = 0
+# number_pairs = [[1, 3], [8, 9], [2, 16]]
+# sum = 0
+# index = 0
 
-while index < len(number_pairs):
-  numbers = number_pairs[index]
-  index2 = 0
-  while index2 < len(numbers):
-    sum += numbers[index2]
-    index2 += 1
-  index += 1
+# while index < len(number_pairs):
+#   numbers = number_pairs[index]
+#   index2 = 0
+#   while index2 < len(numbers):
+#     sum += numbers[index2]
+#     index2 += 1
+#   index += 1
 
-print(sum)
+# print(sum)
+
+# Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
+# For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
