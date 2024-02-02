@@ -91,3 +91,19 @@
 
 # Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
 # For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
+
+
+numbers1 = [1, 2]
+numbers2 = [6, 7, 8]
+number_sums = []
+index1 = 0
+
+while index1 < len(numbers1):
+  index2 = 0
+  number = numbers1[index1]
+  while index2 < len(numbers2):
+    number_sums.append(number + numbers2[index2])
+    index2 += 1
+  index1 += 1
+
+print(number_sums)
