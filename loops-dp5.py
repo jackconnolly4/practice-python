@@ -93,17 +93,34 @@
 # For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
 
 
-numbers1 = [1, 2]
-numbers2 = [6, 7, 8]
-number_sums = []
+# numbers1 = [1, 2]
+# numbers2 = [6, 7, 8]
+# number_sums = []
+# index1 = 0
+
+# while index1 < len(numbers1):
+#   index2 = 0
+#   number = numbers1[index1]
+#   while index2 < len(numbers2):
+#     number_sums.append(number + numbers2[index2])
+#     index2 += 1
+#   index1 += 1
+
+# print(number_sums)
+
+# Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
+# For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+
+numbers = [2, 8, 3]
+product_combinations = []
 index1 = 0
 
-while index1 < len(numbers1):
+while index1 < len(numbers):
+  number = numbers[index1]
   index2 = 0
-  number = numbers1[index1]
-  while index2 < len(numbers2):
-    number_sums.append(number + numbers2[index2])
+  while index2 < len(numbers):
+    product_combinations.append(number * numbers[index2])
     index2 += 1
   index1 += 1
 
-print(number_sums)
+print(product_combinations)
