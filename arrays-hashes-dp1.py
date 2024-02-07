@@ -25,10 +25,18 @@
 
 # Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
 
-numbers = [4]
+# numbers = [4]
 
-numbers.append(5)
-numbers.append(7)
-numbers.append(6)
+# numbers.append(5)
+# numbers.append(7)
+# numbers.append(6)
 
-print(numbers)
+# print(numbers)
+
+# Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
+
+
+bands = ["ween", "primus", "butthole surfers"]
+bands[2] = bands[2].upper()
+
+print(bands)
