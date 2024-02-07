@@ -43,9 +43,17 @@
 
 # Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
-bands = ["ween", "primus", "butthole surfers"]
-index = 0
+# bands = ["ween", "primus", "butthole surfers"]
+# index = 0
 
-while index < len(bands):
-  print(bands[index])
-  index += 1
+# while index < len(bands):
+#   print(bands[index])
+#   index += 1
+
+# Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+
+bands = ["ween", "primus"]
+bands.append("butthole surfers")
+
+print(bands)
