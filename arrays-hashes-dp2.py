@@ -24,9 +24,15 @@
 
 # Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
-book = {"title": "Dune", "author": "Frank Hebert", "pages": 800, "language": "English"}
+# book = {"title": "Dune", "author": "Frank Hebert", "pages": 800, "language": "English"}
 
-print(book["title"])
-print(book["author"])
-print(book["pages"])
-print(book["language"])
+# print(book["title"])
+# print(book["author"])
+# print(book["pages"])
+# print(book["language"])
+
+# Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
+
+books = [{"title": "Dune", "author": "Frank Hebert"}, {"title": "Dune Messiah", "author": "Frank Hebert"}, {"title": "Blood Meridian", "author": "Cormac McCarthy"}]
+
+print(books[2]["author"])
