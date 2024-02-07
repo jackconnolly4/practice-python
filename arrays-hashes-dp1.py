@@ -36,7 +36,16 @@
 # Create an array to store 3 strings with lower case letters. Then change the third string to have all capital letters and print the array on one line.
 
 
-bands = ["ween", "primus", "butthole surfers"]
-bands[2] = bands[2].upper()
+# bands = ["ween", "primus", "butthole surfers"]
+# bands[2] = bands[2].upper()
 
-print(bands)
+# print(bands)
+
+# Create an array to store 3 names. Then print out each name on separate lines with a while loop.
+
+bands = ["ween", "primus", "butthole surfers"]
+index = 0
+
+while index < len(bands):
+  print(bands[index])
+  index += 1
