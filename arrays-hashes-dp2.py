@@ -8,9 +8,16 @@
 
 # Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-people = [
-  { "first_name": "Grace", "last_name": "Hopper" },
-  { "first_name": "Mace", "last_name": "Windu" },
-  { "first_name": "Robert", "last_name": "Chase" }
-]
-print(people[0])
+# people = [
+#   { "first_name": "Grace", "last_name": "Hopper" },
+#   { "first_name": "Mace", "last_name": "Windu" },
+#   { "first_name": "Robert", "last_name": "Chase" }
+# ]
+# print(people[0])
+
+# Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
+
+menu = {"sandwich": 5, "bread": 2, "pizza": 7}
+menu["salad"] = 4
+
+print(menu)
