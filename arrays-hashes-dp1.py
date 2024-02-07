@@ -16,10 +16,19 @@
 
 # Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
-numbers = [1, 2, 3, 4, 5]
-index = 0
+# numbers = [1, 2, 3, 4, 5]
+# index = 0
 
-while index < len(numbers):
-  print(numbers[index])
-  index += 1
+# while index < len(numbers):
+#   print(numbers[index])
+#   index += 1
 
+# Create an array to store 1 number. Then add three more numbers to the array and print the array on one line.
+
+numbers = [4]
+
+numbers.append(5)
+numbers.append(7)
+numbers.append(6)
+
+print(numbers)
