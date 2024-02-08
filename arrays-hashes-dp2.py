@@ -33,6 +33,12 @@
 
 # Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-books = [{"title": "Dune", "author": "Frank Hebert"}, {"title": "Dune Messiah", "author": "Frank Hebert"}, {"title": "Blood Meridian", "author": "Cormac McCarthy"}]
+# books = [{"title": "Dune", "author": "Frank Hebert"}, {"title": "Dune Messiah", "author": "Frank Hebert"}, {"title": "Blood Meridian", "author": "Cormac McCarthy"}]
 
-print(books[2]["author"])
+# print(books[2]["author"])
+
+# Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the
+
+capitals = { "California": "Sacremento", "Illinois": "Springfield", "New York": "Albany" }
+capitals["New Hampshire"] = "Concord"
+print(capitals)
