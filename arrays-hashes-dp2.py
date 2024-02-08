@@ -39,6 +39,13 @@
 
 # Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the
 
-capitals = { "California": "Sacremento", "Illinois": "Springfield", "New York": "Albany" }
-capitals["New Hampshire"] = "Concord"
-print(capitals)
+# capitals = { "California": "Sacremento", "Illinois": "Springfield", "New York": "Albany" }
+# capitals["New Hampshire"] = "Concord"
+# print(capitals)
+
+# Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+laptop = {"brand": "Apple", "model": "Macbook", "year": 2017}
+print(laptop["brand"])
+print(laptop["model"])
+print(laptop["year"])
