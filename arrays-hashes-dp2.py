@@ -62,6 +62,13 @@
 # Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
 
-dictionary = { "bad":"of poor quality or a low standard", "mad":"very angry" }
-dictionary["glad"] = "happy"
-print(dictionary)
+# dictionary = { "bad":"of poor quality or a low standard", "mad":"very angry" }
+# dictionary["glad"] = "happy"
+# print(dictionary)
+
+# Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+shirt = {"brand": "Supreme", "color": "white", "size": "L"}
+print(shirt["brand"])
+print(shirt["color"])
+print(shirt['size'])
