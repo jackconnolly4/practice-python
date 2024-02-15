@@ -27,14 +27,26 @@
 
 # Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string.
 
-word = "bookkeeper"
-letter_frequencies = {}
-index = 0
-while index < len(word):
-    letter = word[index]
-    if letter not in letter_frequencies:
-        letter_frequencies[letter] = 0
-    letter_frequencies[letter] += 1
-    index += 1
+# word = "bookkeeper"
+# letter_frequencies = {}
+# index = 0
+# while index < len(word):
+#     letter = word[index]
+#     if letter not in letter_frequencies:
+#         letter_frequencies[letter] = 0
+#     letter_frequencies[letter] += 1
+#     index += 1
 
-print(letter_frequencies)
+# print(letter_frequencies)
+
+# Convert a hash into an array of arrays.
+# For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
+
+things = {"chair": 100, "book": 14}
+name_price_pairs = []
+
+for name, price in things.items():
+    name_price_pairs.append([name, price])
+
+print(name_price_pairs)
+
