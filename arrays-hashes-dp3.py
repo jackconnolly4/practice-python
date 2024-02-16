@@ -42,11 +42,23 @@
 # Convert a hash into an array of arrays.
 # For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
 
-things = {"chair": 100, "book": 14}
-name_price_pairs = []
+# things = {"chair": 100, "book": 14}
+# name_price_pairs = []
 
-for name, price in things.items():
-    name_price_pairs.append([name, price])
+# for name, price in things.items():
+#     name_price_pairs.append([name, price])
 
-print(name_price_pairs)
+# print(name_price_pairs)
 
+
+# Convert a hash into an array of hashes using the keys from each hash as the :id key in each of the array's hashes.
+# For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
+
+people = {321: {"name": "Alice", "age": 31}, 322: {"name": "Maria", "age": 27}}
+people_array = []
+
+for id, person in people.items():
+    person["id"] = id
+    people_array.append(person)
+
+print(people_array)
